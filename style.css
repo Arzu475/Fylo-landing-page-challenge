@@ -224,7 +224,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15rem;
+  gap: 17rem;
 }
 
 .sign_up-content h2 {
@@ -373,9 +373,10 @@ footer {
         margin: 4rem 0 2rem 0;
     }
 
-    main {
-        padding-bottom: 18%;
+    .main-section {
+        padding-bottom: 7rem;
     }
+
     .main-content > p {
         padding-right: 0;
     }
