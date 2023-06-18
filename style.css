@@ -65,7 +65,6 @@ body {
 
 .logo img, 
 .hero-image img, 
-.main-image img, 
 .logo-footer img, 
 .info img {
     display: block;
@@ -145,7 +144,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 7% 6% 7%;
+    padding: 9% 6% 5%;
     margin-top: 6rem;
 }
 
@@ -162,6 +161,12 @@ main {
 .main-content > p {
     padding-right: 4.3rem;
     font-size: 0.9em;
+}
+
+.main-image img {
+   width: 88%;
+   margin: auto;
+   display: block;
 }
 
 .link-fylo {
@@ -219,7 +224,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10rem;
+  gap: 15rem;
 }
 
 .sign_up-content h2 {
