@@ -144,7 +144,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 9% 6% 5%;
     margin-top: 6rem;
 }
 
@@ -152,6 +151,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 9% 6% 7%;
 }
 .main-content h1 {
     font-size: 2em;
