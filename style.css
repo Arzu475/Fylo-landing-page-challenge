@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --primaryVeryDarkBlue: hsl(243, 87%, 12%);
+    --primaryDesaturatedBlue: hsl(238, 22%, 44%);
+    --accentBrightBlue: hsl(224, 93%, 58%);
+    --accentModerateCyan: rgb(60, 159, 143);
+    --neutralLightGrayishBlue: hsl(240, 75%, 98%);
+    --neutralLightGray: hsl(0, 0%, 75%);
+}
+
+h1, 
+h2, 
+strong {
+    font-family: 'Raleway', sans-serif;
+    color: var(--primaryVeryDarkBlue);
+    font-weight: 700;
+}
+
+p, 
+a, 
+span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.header-content {
+    padding: 4% 6%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3.7rem;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: var(--primaryVeryDarkBlue);
+}
+
+.logo img, 
+.hero-image img, 
+.main-image img, 
+.logo-footer img, 
+.info img {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.hero-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-image, 
+.main-image {
+    margin-top: 4rem;
+}
+
+.hero-content h1, 
+.hero-content p, 
+.main-content h1, 
+.main-content p {
+    color: var(--primaryVeryDarkBlue);
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+    padding-right: 6rem;
+    line-height: 1.3;
+    font-size: 2.2em;
+}
+
+.hero-content > p {
+    padding-right: 5.5rem;
+}
+
+.hero-content > p, 
+.main-content > p, 
+.review p {
+    color: var(--primaryDesaturatedBlue);
+    font-weight: 700;
+}
+
+.hero-input {
+    display: flex;
+    gap: 10px;
+}
+
+.hero-content [type="email"] {
+    padding: 0.5rem 0;
+    width: 46%;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 1rem;
+}
+
+.hero-input > button, 
+.sign-input > button {
+    padding: 0.7rem 0;
+    width: 29%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--accentBrightBlue);
+    color: var(--neutralLightGrayishBlue);
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.185);
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    background: url(images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 7% 6% 4%;
+    margin-top: 6rem;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content h1 {
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+
+.main-content > p {
+    padding-right: 4.3rem;
+    font-size: 0.9em;
+}
+
+.link-fylo {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 3px;
+}
+
+ .link-fylo a {
+  text-decoration: none;
+  color: var(--accentModerateCyan);
+  font-size: 0.9em;
+  display: block;
+} 
+
+ .review {
+    margin-top: 3rem;
+    background-color: #fff;
+    padding: 4% 6% 4% 5%;
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.185);
+} 
+
+.review p {
+    font-size: 0.8em;
+    line-height: 1.5;
+} 
+
+.image-profile img {
+    display: block;
+    width: 10%;
+    border-radius: 50%;
+    float: left;
+    margin-right: 0.5rem;
+} 
+
+.profile-review > span {
+   display: block;
+   font-size: 0.6em;
+   color: var(--primaryDesaturatedBlue);
+}
+
+.profile-review > strong {
+    font-size: 0.8em;
+}
+
+.sign_up-section {
+    padding: 6% 6%;
+    background-color: var(--primaryDesaturatedBlue);
+}
+
+.sign_up-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15rem;
+}
+
+.sign_up-content h2 {
+    color: var(--neutralLightGrayishBlue);
+    margin-bottom: 1rem;
+    font-size: 1.8em;
+}
+
+.sign_up-content p {
+    color: var(--neutralLightGrayishBlue);
+}
+
+.sign-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-input > button {
+    display: block;
+    padding: 0.8rem;
+    width: 37%;
+    border-radius: 3px;
+    color: var(--neutralLightGrayishBlue);
+}
+
+.sign-input > [type="email"] {
+    width: 28rem;
+    padding: 0.8rem;
+    border-radius: 3px;
+    border: none;
+    color: var(--neutralLightGray);
+    margin-bottom: 1rem;
+}
+
+footer {
+    padding: 7% 6% 5%;
+    background-color: var(--primaryVeryDarkBlue);
+}
+
+.footer-wrap {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+.contact .logo-footer {
+    margin-bottom: 1rem;
+}
+
+.contact .info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1rem;
+    color: var(--neutralLightGray);
+}
+
+.about1, 
+.about2 {
+    margin-top: 3.5rem;
+}
+
+.about1 {
+    margin-left: 5rem;
+}
+
+.footer-wrap ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.footer-wrap ul li a {
+    text-decoration: none;
+    color: var(--neutralLightGray);
+}
+
+.icons {
+    padding-top: 4rem;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    
+}
+
+.icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: var(--neutralLightGray);
+    background-color: transparent;
+    padding: 0.3rem;
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar ul li a {
+        font-size: 0.7em;
+    }
+    
+    .navbar ul {
+        gap: 1rem;
+    }
+    
+    .logo img {
+        width: 70%;
+    }
+    
+    .hero-wrap, 
+    .main-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-content h1 {
+        margin-block: 2rem;
+        font-size: 1.5em;
+    }
+    .hero-content h1, 
+    .main-content h1,
+    .hero-content p, 
+    .sign_up-text {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .hero-input {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .hero-content [type="email"], 
+    .hero-content button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .main-content > h1 {
+        font-size: 1.1em;
+        margin: 4rem 0 2rem 0;
+    }
+
+    main {
+        padding-bottom: 18%;
+    }
+    .main-content > p {
+        padding-right: 0;
+    }
+
+    .link-fylo {
+        justify-content: center;
+        margin-top: 2.5rem;
+    }
+
+    hr {
+        margin: auto;
+        width: 50%;
+    }
+    .review {
+        margin-inline: auto;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 1%;
+    }
+
+    .sign_up-section {
+        padding-block: 4rem;
+    }
+    .sign_up-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .sign_up-text h2 {
+        font-size: 1.1em;
+    }
+    
+    .sign-input {
+       align-items: center;
+       margin-top: 2rem;
+    }
+
+    .sign-input > [type="email"], 
+    .sign-input > button {
+        width: 18rem;
+    }
+
+    .footer-wrap {
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+    }
+
+    .footer-wrap .about1 {
+        margin-left: 0;
+    }
+
+    .footer-wrap .logo-footer {
+        margin-bottom: 2rem;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    .hero-section h1 {
+        font-size: 1.8em;
+    }
+    .hero-section {
+        padding-top: 2rem;
+    }
+
+    .hero-input {
+        flex-direction: column;
+    }
+
+    .hero-input input[type="email"], 
+    .hero-input button {
+        width: 80%;
+    }
+    .hero-content h1, 
+    .main-content h1,
+    .hero-content p, 
+    .sign_up-text {
+      padding-right: 0;
+    }
+
+    .main-section {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .main-section h1 {
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    .main-image img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .sign_up-content, 
+    .sign-input {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+   .sign_up-text {
+    text-align: center;
+    padding-bottom: 2rem;
+   }
+
+   .footer-wrap .about1 {
+    margin-left: 2rem;
+  }
+}
